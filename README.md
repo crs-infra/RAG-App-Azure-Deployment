@@ -38,5 +38,5 @@ flowchart LR
 ### 1. Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/crs-infra/RAG-App-Azure-Deployment.git
 cd rag-application
