@@ -1,22 +1,17 @@
 # RAG-App-Azure-Deployment
 A production-ready Retrieval-Augmented Generation (RAG) application deployed on Microsoft Azure with Kubernetes orchestration.
+
 ## Architecture
 
+## Architecture
 
-
-┌─────────────┐ ┌──────────────┐ ┌─────────────┐
-│ Client │────▶│ Azure AKS │────▶│ Azure Blob │
-│ │ │ (RAG App) │ │ Storage │
-└─────────────┘ └──────────────┘ └─────────────┘
-│
-├────▶ Azure Cognitive Search
-│ (Vector Database)
-│
-└────▶ Azure OpenAI
-(Embeddings)
-
-
-
+```mermaid
+flowchart LR
+    Client[Client] --> AKS[Azure AKS<br/>RAG App]
+    AKS --> Blob[Azure Blob<br/>Storage]
+    Client --> Search[Azure Cognitive Search<br/>Vector Database]
+    Client --> OpenAI[Azure OpenAI<br/>Embeddings]
+```
 
 ## Features
 
