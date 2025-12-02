@@ -2,6 +2,8 @@
 A production-ready Retrieval-Augmented Generation (RAG) application deployed on Microsoft Azure with Kubernetes orchestration.
 ## Architecture
 
+
+
 ┌─────────────┐ ┌──────────────┐ ┌─────────────┐
 │ Client │────▶│ Azure AKS │────▶│ Azure Blob │
 │ │ │ (RAG App) │ │ Storage │
@@ -12,6 +14,8 @@ A production-ready Retrieval-Augmented Generation (RAG) application deployed on 
 │
 └────▶ Azure OpenAI
 (Embeddings)
+
+
 
 
 ## Features
